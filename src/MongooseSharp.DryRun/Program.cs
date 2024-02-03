@@ -63,14 +63,13 @@ static unsafe void Run()
     Mongoose.mg_mgr_init(&mgr);
 
     var handler = new mg_event_handler_t(Handler);
-    var handlerPtr = Marshal.GetFunctionPointerForDelegate(handler);
+    var handlerPtr = (delegate* unmanaged[Cdecl]<mg_connection*, int, void*, void>)Marshal.GetFunctionPointerForDelegate(handler);
     GC.KeepAlive(Something.Esc);
 
     var url = "http://0.0.0.0:8000"u8;
     fixed (byte* rawUrl = url)
     {
-        Mongoose.mg_http_listen(&mgr, (sbyte*)rawUrl,
-            (delegate*unmanaged[Cdecl]<mg_connection*, int, void*, void>)handlerPtr, null);
+        Mongoose.mg_http_listen(&mgr, (sbyte*)rawUrl, handlerPtr, null);
     }
 
     while (true)
