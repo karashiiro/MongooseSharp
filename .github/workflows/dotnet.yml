@@ -33,6 +33,6 @@ jobs:
     - name: Build
       run: dotnet build --no-restore --configuration Release
     - name: Copy libmongoose
-      run: Copy-Item build\Release\libmongoose.dll -Destination src\Mongoose.Interop.UnitTests\bin\Release\net7.0
+      run: Copy-Item build\Release\libmongoose.dll -Destination src\MongooseSharp.Interop.UnitTests\bin\Release\net7.0
     - name: Test
       run: dotnet test --no-build --verbosity normal
