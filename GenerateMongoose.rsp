@@ -6,7 +6,9 @@ c
 _WIN32
 --config
 generate-file-scoped-namespaces
+generate-helper-types
 generate-tests-xunit
+log-exclusions
 multi-file
 --with-librarypath
 *=libmongoose
