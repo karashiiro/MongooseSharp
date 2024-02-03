@@ -13,4 +13,11 @@
       <ProjectReference Include="..\MongooseSharp\MongooseSharp.csproj" />
     </ItemGroup>
 
+    <Target Name="CopyNativeLibraries" AfterTargets="Build">
+        <ItemGroup>
+            <NativeDeps Include="..\..\build\$(Configuration)\**\*" />
+        </ItemGroup>
+        <Copy SourceFiles="@(NativeDeps)" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
+    </Target>
+
 </Project>

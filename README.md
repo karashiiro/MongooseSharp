@@ -5,7 +5,5 @@
 * Install `ClangSharpPInvokeGenerator`
 * Run `build.cmd`
 * Run `build/build.cmd`
-* Build DLL
-* Copy DLL to `MongooseSharp.DryRun/bin/Debug/net7.0`
 * Run `MongooseSharp.DryRun`
 * Run `curl http://localhost:8000/MongooseSharp.DryRun.deps.json`
