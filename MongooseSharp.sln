@@ -1,10 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongooseSharp", "MongooseSharp\MongooseSharp.csproj", "{59227B6F-2B77-4735-B136-7D790FBFEA27}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongooseSharp", "src\MongooseSharp\MongooseSharp.csproj", "{59227B6F-2B77-4735-B136-7D790FBFEA27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongooseSharp.Interop.UnitTests", "MongooseSharp.Interop.UnitTests\MongooseSharp.Interop.UnitTests.csproj", "{8325ADCD-DCA0-4C51-BBDD-DAC416C9B6C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongooseSharp.Interop.UnitTests", "src\MongooseSharp.Interop.UnitTests\MongooseSharp.Interop.UnitTests.csproj", "{8325ADCD-DCA0-4C51-BBDD-DAC416C9B6C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongooseSharp.DryRun", "MongooseSharp.DryRun\MongooseSharp.DryRun.csproj", "{5820F8BF-076A-4DD5-80CB-35B52B9007E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongooseSharp.DryRun", "src\MongooseSharp.DryRun\MongooseSharp.DryRun.csproj", "{5820F8BF-076A-4DD5-80CB-35B52B9007E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
