@@ -1,12 +1,15 @@
+--additional
+-m64
 --language
 c
 -D
 _WIN32
 --config
-exclude-empty-records
 generate-file-scoped-namespaces
 generate-tests-xunit
 multi-file
+--with-librarypath
+*=libmongoose
 --file
 lib/mongoose/mongoose.h
 --methodClassName
@@ -15,7 +18,5 @@ Mongoose
 MongooseSharp.Interop
 --output
 ./src/MongooseSharp/Interop
---prefixStrip
-mg_
 --test-output
-./src/MongooseSharp.UnitTests/InteropTests
+./src/MongooseSharp.Interop.UnitTests/Interop

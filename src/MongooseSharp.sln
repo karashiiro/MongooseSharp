@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongooseSharp", "MongooseSharp\MongooseSharp.csproj", "{59227B6F-2B77-4735-B136-7D790FBFEA27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongooseSharp.Interop.UnitTests", "MongooseSharp.Interop.UnitTests\MongooseSharp.Interop.UnitTests.csproj", "{8325ADCD-DCA0-4C51-BBDD-DAC416C9B6C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongooseSharp.DryRun", "MongooseSharp.DryRun\MongooseSharp.DryRun.csproj", "{5820F8BF-076A-4DD5-80CB-35B52B9007E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59227B6F-2B77-4735-B136-7D790FBFEA27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59227B6F-2B77-4735-B136-7D790FBFEA27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59227B6F-2B77-4735-B136-7D790FBFEA27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59227B6F-2B77-4735-B136-7D790FBFEA27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8325ADCD-DCA0-4C51-BBDD-DAC416C9B6C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8325ADCD-DCA0-4C51-BBDD-DAC416C9B6C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8325ADCD-DCA0-4C51-BBDD-DAC416C9B6C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8325ADCD-DCA0-4C51-BBDD-DAC416C9B6C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5820F8BF-076A-4DD5-80CB-35B52B9007E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5820F8BF-076A-4DD5-80CB-35B52B9007E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5820F8BF-076A-4DD5-80CB-35B52B9007E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5820F8BF-076A-4DD5-80CB-35B52B9007E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
