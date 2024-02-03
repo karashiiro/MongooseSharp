@@ -22,11 +22,17 @@ jobs:
         dotnet-version: 7.0.x
     - name: Install source generator
       run: dotnet tool install --global ClangSharpPInvokeGenerator --version 17.0.0
+    - name: Build libmongoose
+      run: |
+        cd build
+        .\build.cmd
     - name: Generate Mongoose bindings
-      run: ClangSharpPInvokeGenerator "@GenerateMongoose.rsp"
+      run: .\build.cmd
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
+    - name: Copy libmongoose
+      run: Copy-Item build\Release\libmongoose.dll -Destination src\Mongoose.Interop.UnitTests\bin\Release\net7.0
     - name: Test
       run: dotnet test --no-build --verbosity normal
